@@ -1,0 +1,1 @@
+echo '<moleft>{content}</moleft>';

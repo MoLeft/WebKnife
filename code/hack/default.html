@@ -1,0 +1,298 @@
+<html><head>
+<meta charset="utf-8">
+<title>检测到本站有漏洞！power by caidao.moleft.cn</title>
+</head>
+<body bgcolor="#000000" background="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2521203318,1790883988&fm=27&gp=0.jpg">
+ <center>
+ <div style="text-align:center">
+<span style="font: 20px tahoma;size:40px;color:black;text-shadow: 0px 0px 50px;"><strong> <font color="#8600FF"><font face="Comic Sans MS">     
+<span style="font: 20px tahoma;size:40px;color:black;text-shadow: 0px 0px 50px;"><strong> <font color="#00CACA"><font face="Comic Sans MS">    
+ 
+            <center>
+
+<script>
+farbbibliothek = new Array(); 
+farbbibliothek[0] = new Array("#FF0000","#FF1100","#FF2200","#FF3300","#FF4400","#FF5500","#FF6600","#FF7700","#FF8800","#FF9900","#FFaa00","#FFbb00","#FFcc00","#FFdd00","#FFee00","#FFff00","#FFee00","#FFdd00","#FFcc00","#FFbb00","#FFaa00","#FF9900","#FF8800","#FF7700","#FF6600","#FF5500","#FF4400","#FF3300","#FF2200","#FF1100"); 
+farbbibliothek[1] = new Array("#00FF00","#000000","#00FF00","#00FF00"); 
+farbbibliothek[2] = new Array("#00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00"); 
+farbbibliothek[3] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+farbbibliothek[4] = new Array("#FF0000","#EE0000","#DD0000","#CC0000","#BB0000","#AA0000","#990000","#880000","#770000","#660000","#550000","#440000","#330000","#220000","#110000","#000000","#110000","#220000","#330000","#440000","#550000","#660000","#770000","#880000","#990000","#AA0000","#BB0000","#CC0000","#DD0000","#EE0000"); 
+farbbibliothek[5] = new Array("#000000","#000000","#000000","#FFFFFF","#FFFFFF","#FFFFFF"); 
+farbbibliothek[6] = new Array("#0000FF","#FFFF00"); 
+farben = farbbibliothek[4];
+function farbschrift() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.all["a"+i].style.color=farben[i]; 
+} 
+farbverlauf(); 
+} 
+function string2array(text) 
+{ 
+Buchstabe = new Array(); 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+k=0; 
+while(k<=text.length) 
+{ 
+Buchstabe[k] = text.charAt(k); 
+k++; 
+} 
+} 
+function divserzeugen() 
+{ 
+for(var i=0 ; i<Buchstabe.length; i++) 
+{ 
+document.write("<span id='a"+i+"' class='a"+i+"'>"+Buchstabe[i] + "</span>"); 
+} 
+farbschrift(); 
+} 
+var a=1; 
+function farbverlauf() 
+{ 
+for(var i=0 ; i<farben.length; i++) 
+{ 
+farben[i-1]=farben[i]; 
+} 
+farben[farben.length-1]=farben[-1]; 
+
+setTimeout("farbschrift()",30); 
+} 
+// 
+var farbsatz=1; 
+function farbtauscher() 
+{ 
+farben = farbbibliothek[farbsatz]; 
+while(farben.length<text.length) 
+{ 
+farben = farben.concat(farben); 
+} 
+farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001)); 
+} 
+setInterval("farbtauscher()",5000); 
+text= "  "; //h 
+string2array(text)
+
+
+divserzeugen(); 
+</script><span id="a0" class="a0" style="color: rgb(255, 0, 0);"> </span><span id="a1" class="a1" style="color: rgb(238, 0, 0);"> </span><span id="a2" class="a2" style="color: rgb(221, 0, 0);"></span><span id="a0" class="a0" style="color: rgb(255, 0, 0);"> </span><span id="a1" class="a1" style="color: rgb(238, 0, 0);"> </span><span id="a2" class="a2" style="color: rgb(221, 0, 0);"></span><span id="a0" class="a0" style="color: rgb(255, 17, 0);"> </span>
+<center>
+<font face="Kryptic" color="#FF0000" size="10"><br>亲爱的站长，您的网站有漏洞！</font> <br><br>
+<font face="Kryptic" color="#F67F421" size="6">{name}携手陌小离进站检测！</font><br><br>
+<font face="calibri" color="#FF0000" size="4">中国菜刀web版提供技术支持！</font>
+<b><font face="Times New Roman" size="6" color="#F67F421"></font></b><p></p>
+</center>
+  <marquee behavior="scroll" direction="left" scrollamount="40" scrolldelay="40" width="100%" style="width: 100%;"> <font color="blue"> 	<font color="red">_____________________________________________________________________________</font>
+</font></marquee><center><marquee behavior="scroll" direction="left" width="80%" style="color: yellow; width: 80%;"><font size="6" color="#FF640" face="Times New Roman"><font face="Times New Roman" size="6" color="#F45613">参与本次入侵的人员有：&nbsp;<font face="Times New Roman" size="6" color="#F167F1"> <font face="Times New Roman" size="6" color="#F45613">&nbsp;{name}(QQ:{qq})&nbsp;&nbsp;<font face="Times New Roman" size="6" color="#F45613">&nbsp;陌小离(QQ:1805765171)&nbsp;&nbsp;入侵本站用时：66秒，利用漏洞：44个，同时感谢中国菜刀Web版的技术支持：中国菜刀，黑客之刃。功夫再高，也怕菜刀。中国菜刀成就你的黑客梦，域名：caidao.moleft.cn</font></font></font></font></font></marquee>
+	</center>
+  <marquee behavior="scroll" direction="right" scrollamount="100" scrolldelay="40" width="100%" style="width: 100%;"> 
+  <font color="red">_____________________________________________________________________________</font>
+  </marquee>
+  <script language="JavaScript">
+</script>
+<p></p>
+<p>
+ <embed flashvars="letter=Hello !" src="http://api.uriwang.me/public/4.swf" quality="high" wmode="transparent" width="800" height="80" align="middle" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+  <script type="text/javascript">if (typeof document.onselectstart!="undefined") {
+document.onselectstart=new Function ("return false");
+}
+else{
+document.onmousedown=new Function ("return false");
+document.onmouseup=new Function ("return true");
+}
+  </script>
+  <script>
+</script>
+  <embed flashvars="letter=Hello !" src="http://api.uriwang.me/public/4.swf" quality="high" wmode="transparent" width="800" height="80" align="middle" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+  <script type="text/javascript">if (typeof document.onselectstart!="undefined") {
+document.onselectstart=new Function ("return false");
+}
+else{
+document.onmousedown=new Function ("return false");
+document.onmouseup=new Function ("return true");
+}
+  </script>
+</p>
+</center>
+   
+    <p align="center">&nbsp;</p>
+<div align="center">
+		<pre><font color="#FF0000"><font size="1">HHHHHHHHH     HHHHHHHHH                                        <span class="style6">kkkkkkkk</span>                                        <span class="style6">  d::::::d</span>
+H:::::::H     H:::::::H                                       <span class="style6"> k::::::k  </span>                                        <span class="style6">d::::::d</span>
+H:::::::H     H:::::::H                                       <span class="style6"> k::::::k   </span>                                     <span class="style6">  d::::::d</span>
+ HH::::::H     H::::::HH                                        <span class="style6">k::::::k </span>                                         <span class="style6"> d:::::d </span>
+  H:::::H     H:::::H     <span class="style6">aaaaaaaaaaaaa</span>       cccccccccccccccc  <span class="style6">k:::::k    kkkkkkk</span>  eeeeeeeeeeee        <span class="style6"> ddddddddd:::::d </span>
+  H:::::H     H:::::H     <span class="style6">a::::::::::::a</span>    cc:::::::::::::::c <span class="style6"> k:::::k   k:::::k</span> ee::::::::::::ee     <span class="style6">dd::::::::::::::d </span></font></font><font size="1"><font color="#FFFFFF">
+  H::::::HHHHH::::::H     <span class="style6">aaaaaaaaa:::::a</span>  c:</font><font color="#FFFF00">::::::::::::::::c </font><span class="style6"><font color="#FFFF00"> k:::::k  k::</font><font color="#FFFFFF">:::k </font></span><font color="#FFFFFF">e::::::eeeee:::::ee  <span class="style6">d::::::::::::::::d </span>
+  H:::::::::::::::::H              <span class="style6">a::::a</span> c::</font><font color="#FFFF00">:::::cccccc:::::c  </font><span class="style6"><font color="#FFFF00">k:::::k k:::</font><font color="#FFFFFF">::k</font></span><font color="#FFFFFF"> e::::::e     e:::::e <span class="style6">d:::::::ddddd:::::d </span>
+  H:::::::::::::::::H       <span class="style6">aaaaaaa:::::a</span> c::</font><font color="#FFFF00">::::c     ccccccc  </font><span class="style6"><font color="#FFFF00">k::::::k::::</font><font color="#FFFFFF">:k </font></span><font color="#FFFFFF"> e:::::::eeeee::::::e <span class="style6">d::::::d    d:::::d </span>
+  H::::::HHHHH::::::H     <span class="style6">aa::::::::::::a</span> c::</font><font color="#FFFF00">:::c              </font><span class="style6"><font color="#FFFF00"> k:::::::::::</font><font color="#FFFFFF">k </font></span><font color="#FFFFFF">  e:::::::::::::::::e  <span class="style6">d:::::d     d:::::d </span>
+  H:::::H     H:::::H    <span class="style6">a::::aaaa::::::a</span> c::</font><font color="#FFFF00">:::c              </font><span class="style6"><font color="#FFFF00"> k:::::::::::</font><font color="#FFFFFF">k </font></span><font color="#FFFFFF">  e::::::eeeeeeeeeee   <span class="style6">d:::::d     d:::::d</span> </font></font><font size="1"><font color="#008000">
+  H:::::H     H:::::H   <span class="style6">a::::a    a:::::a</span> c::::::c     c</font><font color="#FFFF00"><span class="style6">cccccc  k::::::k:::</span></font></font><font size="1"><font color="#008000"><span class="style6">::k </span> e:::::::e            <span class="style6">d:::::d     d:::::d </span>
+HH::::::H     H::::::HH <span class="style6">a::::a    a:::::a </span>c:::::::cc</font><font color="#FFFF00"><span class="style6">cccc:::::c k::::::k k:</span></font></font><font size="1"><font color="#008000"><span class="style6">::::k</span> e::::::::e           <span class="style6">d::::::ddddd::::::dd</span>
+H:::::::H     H:::::::H <span class="style6">a:::::aaaa::::::a </span> c:::::::::::</font><font color="#FFFF00">::::::c k::::::k </font></font><font size="1"><font color="#008000"><span class="style6"> k:::::k</span> e::::::::eeeeeeee    <span class="style6">d:::::::::::::::::d</span>
+H:::::::H     H:::::::H <span class="style6"> a::::::::::aa:::a</span>  cc:::::::::::::</font><font color="#FFFF00"><span class="style6">::c k:::::</span></font></font><font size="1"><font color="#008000"><span class="style6">:k   k:::::k </span>ee:::::::::::::e     <span class="style6">d:::::::::ddd::::d</span>
+HHHHHHHHH     HHHHHHHHH   <span class="style6">aaaaaaaaaa  aaaa</span>    ccccccccc</font><font color="#FFFF00"><span class="style6">ccccccc kkkkk</span></font></font><font color="#008000"><font size="1"><span class="style6">kkk    kkkkkkk </span> eeeeeeeeeeeeee      </font><span class="style6"><font size="1">ddddddddddddddddd</font></span></font></pre>
+
+	</div>
+<html> 
+<bgsound src="dream.htm@404,http%253A%252F%252Fwww.uriwang.me%252F13557853.mp3-xcode=888415dce9dcabc57c370964f995582b&amp;mid=0.98297898353513" tppabs="http://zhangmenshiting2.baidu.com/data2/music/13557853/13557853.mp3?xcode=888415dce9dcabc57c370964f995582b&mid=0.98297898353513" loop="-1"> 
+<script type="text/javascript"> 
+;(function(){
+var msg = "";
+var size = 24;
+var circleY = 0.75; var circleX = 2;
+var letter_spacing = 5;
+var diameter = 10;
+var rotation = 0.4;
+var speed = 0.3;
+if (!window.addEventListener && !window.attachEvent || !document.createElement) return;
+msg = msg.split('');
+var n = msg.length - 1, a = Math.round(size * diameter * 0.208333), currStep = 20,
+ymouse = a * circleY + 20, xmouse = a * circleX + 20, y = [], x = [], Y = [], X = [],
+o = document.createElement('div'), oi = document.createElement('div'),
+b = document.compatMode && document.compatMode != "BackCompat"? document.documentElement : document.body,
+mouse = function(e){
+ e = e || window.event;
+ ymouse = !isNaN(e.pageY)? e.pageY : e.clientY;
+ xmouse = !isNaN(e.pageX)? e.pageX : e.clientX;
+},
+makecircle = function(){
+ if(init.nopy){
+  o.style.top = (b || document.body).scrollTop + 'px';
+  o.style.left = (b || document.body).scrollLeft + 'px';
+ };
+ currStep -= rotation;
+ for (var d, i = n; i > -1; --i){
+  d = document.getElementById('iemsg' + i).style;
+  d.top = Math.round(y[i] + a * Math.sin((currStep + i) / letter_spacing) * circleY - 15) + 'px';
+  d.left = Math.round(x[i] + a * Math.cos((currStep + i) / letter_spacing) * circleX) + 'px';
+ };
+},
+drag = function(){
+ y[0] = Y[0] += (ymouse - Y[0]) * speed;
+ x[0] = X[0] += (xmouse - 20 - X[0]) * speed;
+ for (var i = n; i > 0; --i){
+  y[i] = Y[i] += (y[i-1] - Y[i]) * speed;
+  x[i] = X[i] += (x[i-1] - X[i]) * speed;
+ };
+ makecircle();
+},
+init = function(){
+ if(!isNaN(window.pageYOffset)){
+  ymouse += window.pageYOffset;
+  xmouse += window.pageXOffset;
+ } else init.nopy = true;
+ for (var d, i = n; i > -1; --i){
+  d = document.createElement('div'); d.id = 'iemsg' + i;
+  d.style.height = d.style.width = a + 'px';
+  d.appendChild(document.createTextNode(msg[i]));
+  oi.appendChild(d); y[i] = x[i] = Y[i] = X[i] = 0;
+ };
+ o.appendChild(oi); document.body.appendChild(o);
+ setInterval(drag, 25);
+},
+ascroll = function(){
+ ymouse += window.pageYOffset;
+ xmouse += window.pageXOffset;
+ window.removeEventListener('scroll', ascroll, false);
+};
+o.id = 'outerCircleText'; o.style.fontSize = size + 'px';
+if (window.addEventListener){
+ window.addEventListener('load', init, false);
+ document.addEventListener('mouseover', mouse, false);
+ document.addEventListener('mousemove', mouse, false);
+  if (/Apple/.test(navigator.vendor))
+   window.addEventListener('scroll', ascroll, false);
+}
+else if (window.attachEvent){
+ window.attachEvent('onload', init);
+ document.attachEvent('onmousemove', mouse);
+};
+})();
+</script> 
+<script type="text/javascript"> 
+function toSpans(span) {
+  var str=span.firstChild.data;
+  var a=str.length;
+  span.removeChild(span.firstChild);
+  for(var i=0; i<a; i++) {
+    var theSpan=document.createElement("SPAN");
+    theSpan.appendChild(document.createTextNode(str.charAt(i)));
+    span.appendChild(theSpan);
+  }
+}
+function RainbowSpan(span, hue, deg, brt, spd, hspd) {
+    this.deg=(deg==null?360:Math.abs(deg));
+    this.hue=(hue==null?0:Math.abs(hue)%360);
+    this.hspd=(hspd==null?3:Math.abs(hspd)%360);
+    this.length=span.firstChild.data.length;
+    this.span=span;
+    this.speed=(spd==null?50:Math.abs(spd));
+    this.hInc=this.deg/this.length;
+    this.brt=(brt==null?255:Math.abs(brt)%256);
+    this.timer=null;
+    toSpans(span);
+    this.moveRainbow();
+}
+RainbowSpan.prototype.moveRainbow = function() {
+  if(this.hue>359) this.hue-=360;
+  var color;
+  var b=this.brt;
+  var a=this.length;
+  var h=this.hue;
+ 
+  for(var i=0; i<a; i++) {
+    if(h>359) h-=360;
+    if(h<60) { color=Math.floor(((h)/60)*b); red=b;grn=color;blu=0; }
+    else if(h<120) { color=Math.floor(((h-60)/60)*b); red=b-color;grn=b;blu=0; }
+    else if(h<180) { color=Math.floor(((h-120)/60)*b); red=0;grn=b;blu=color; }
+    else if(h<240) { color=Math.floor(((h-180)/60)*b); red=0;grn=b-color;blu=b; }
+    else if(h<300) { color=Math.floor(((h-240)/60)*b); red=color;grn=0;blu=b; }
+    else { color=Math.floor(((h-300)/60)*b); red=b;grn=0;blu=b-color; }
+    h+=this.hInc;
+    this.span.childNodes[i].style.color="rgb("+red+", "+grn+", "+blu+")";
+  }
+  this.hue+=this.hspd;
+}
+</script> 
+</HEAD> 
+<BODY>
+ 
+<style> 
+body {
+ padding:0;
+ margin:0;
+ background-image:url();
+ background-repeat: no-repeat;
+ background-position:bottom;
+background-color: black;
+color: #ffffff;
+font: normal 80% Verdana;
+margin-top: 0px;
+margin-left: 0px;
+padding: 0;
+margin-right: 0px;
+}
+</style> 
+<div align="center"> 
+<h1 id="r1">攻防无绝对，技术无黑白。</h1> 
+</div> 
+<script type="text/javascript"> 
+var r1=document.getElementById("r1"); //get span to apply rainbow
+var myRainbowSpan=new RainbowSpan(r1, 0, 360, 255, 50, 18); //apply static rainbow effect
+myRainbowSpan.timer=window.setInterval("myRainbowSpan.moveRainbow()", myRainbowSpan.speed);
+</script> 
+<div align="center"> 
+<p class="STYLE1" id="r2">入侵上帝的电脑，改写可笑的人生。</p><br>
+<p class="STYLE1" id="r2">power by <a href="http://caidao.moleft.cn">中国菜刀web版</a></p> 
+</div> 
+<script type="text/javascript"> 
+var r2=document.getElementById("r2"); //get span to apply rainbow
+var myRainbowSpan2=new RainbowSpan(r2, 0, 360, 255, 50, 348); //apply static rainbow effect
+myRainbowSpan2.timer=window.setInterval("myRainbowSpan2.moveRainbow()", myRainbowSpan2.speed);
+</script> 
+</html> 
