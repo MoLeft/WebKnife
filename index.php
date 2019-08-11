@@ -56,7 +56,7 @@
   <script src="code/addon/hint/anyword-hint.js"></script>
   <script src="http://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
   <script src="layer/layer.js"></script>
-  <script src="//caidao.moleft.cn/layer/webshell.js"></script>
+  <script src="layer/webshell.js"></script>
 </head>
 <body>
 <div class="app app-header-fixed  ">
